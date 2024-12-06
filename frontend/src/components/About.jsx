@@ -17,20 +17,23 @@ const About = () => {
       <h1 className={`${styles.title} ${styles.fade}`}>
         {translations[currentIndex]}
       </h1>
-      <h2>I'm Tehaunui</h2>
-      <div>
-        <img
-          className={styles.avatar}
-          src="https://avatars.githubusercontent.com/u/92765882?v=4"
-          alt="profile"
-        />
+      <div className={styles.intro}>
+        <h2>I'm Tehaunui</h2>
+        <div>
+          <img
+            className={styles.avatar}
+            src="https://avatars.githubusercontent.com/u/92765882?v=4"
+            alt="profile"
+          />
+        </div>
+        <p className={styles.intro}>
+          Currently a web developer at the Ministry of Education
+          <br />
+          I enjoy being involved in front-end, back-end development, <br />
+          and build intuitive web apps, websites and dev related projects.{" "}
+          <br />
+        </p>
       </div>
-      <p className={styles.intro}>
-        Currently a web developer at the Ministry of Education
-        <br />
-        I enjoy being involved in front-end, back-end development, <br />
-        and build intuitive web apps, websites and dev related projects. <br />
-      </p>
     </>
   );
 };

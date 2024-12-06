@@ -1,7 +1,12 @@
 import React from "react";
+import Education from "../components/Education";
 
 const EducationScreen = () => {
-  return <div>EducationScreen</div>;
+  return (
+    <>
+      <Education />
+    </>
+  );
 };
 
 export default EducationScreen;

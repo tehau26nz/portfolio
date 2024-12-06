@@ -33,6 +33,23 @@
     color: #333;
 }
 
+.intro {
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .fade {
     animation: fadeInOut 3s ease-in-out infinite;
 }
