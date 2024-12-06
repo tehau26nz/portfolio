@@ -1,0 +1,60 @@
+.avatar {
+    padding: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    /* To center with margin auto */
+    margin: 0 auto;
+    /* Centers horizontally */
+
+    /* Default size for larger screens */
+    width: 250px;
+    height: 250px;
+
+    /* Smaller screen adjustments */
+    @media (max-width: 768px) {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Extra-small screen adjustments */
+    @media (max-width: 576px) {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    /* Adjust size as needed */
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.fade {
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}

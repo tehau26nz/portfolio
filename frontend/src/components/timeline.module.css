@@ -1,0 +1,75 @@
+/* timeline.module.css */
+.timeline {
+    position: relative;
+    padding: 2rem;
+}
+
+/* Default vertical layout for small screens */
+.timelineEvent {
+    margin-bottom: 2rem;
+    border-left: 2px solid #ddd;
+    padding-left: 1.5rem;
+    position: relative;
+    /* For better responsiveness, give timeline events a flexible width on smaller screens */
+    width: 100%;
+}
+
+/* Timeline dot position */
+.timelineEvent::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #007bff;
+}
+
+.timelineEvent h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.timelineEvent p {
+    font-size: 1rem;
+}
+
+.timelineEvent small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #6c757d;
+}
+
+/* Media Queries for larger screens (tablets, laptops, etc.) */
+@media (min-width: 768px) {
+    .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .timelineEvent {
+        /* Align items horizontally */
+        width: 48%;
+        /* Two items per row */
+        margin-bottom: 1rem;
+        /* Reduce space between timeline events */
+        border-left: none;
+        padding-left: 1rem;
+        /* Adjust the position of the dot to align with the left side */
+        padding-left: 0;
+        margin-left: 10px;
+    }
+
+    /* Position the timeline dots horizontally */
+    .timelineEvent::before {
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .timelineEvent h5 {
+        font-size: 1rem;
+    }
+}

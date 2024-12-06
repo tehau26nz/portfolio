@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaBookOpen, FaBriefcase, FaMugHot } from "react-icons/fa";
+import styles from "../components/header.module.css";
 
 const Header = () => {
   return (
@@ -11,15 +12,15 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/education">
+              <Nav.Link href="/education" className={styles.navbutton}>
                 <FaBookOpen />
                 Education
               </Nav.Link>
-              <Nav.Link href="/experience">
+              <Nav.Link href="/experience" className={styles.navbutton}>
                 <FaBriefcase />
                 Experience
               </Nav.Link>
-              <Nav.Link href="/hobbies">
+              <Nav.Link href="/hobbies" className={styles.navbutton}>
                 <FaMugHot />
                 Hobbies
               </Nav.Link>
