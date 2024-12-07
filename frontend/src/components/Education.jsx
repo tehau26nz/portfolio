@@ -14,12 +14,17 @@ const Education = () => {
             animationDelay: `${index * 0.3}s`, //Delay each card by 0.3s
           }}
         >
-          <Card.Body>
-            <Card.Title as="div">
-              <strong>{edu.qualification}</strong>
-            </Card.Title>
-            <Card.Text as="h2">{edu.institution}</Card.Text>
-            <Card.Text as="h3">{edu.years}</Card.Text>
+          <Card.Body d-flex justify-content-between align-items-center>
+            <div>
+              <Card.Title as="h1" className="text-center">
+                {edu.qualification}
+              </Card.Title>
+              <Card.Text as="h2">{edu.institution}</Card.Text>
+              <Card.Text as="h3" className="mb-3">
+                {edu.years}
+              </Card.Text>
+            </div>
+            <Card.Img src={edu.logo} className={styles.logo}></Card.Img>
           </Card.Body>
         </Card>
       ))}
