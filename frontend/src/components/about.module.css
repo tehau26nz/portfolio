@@ -22,6 +22,7 @@
     @media (max-width: 576px) {
         width: 175px;
         height: 175px;
+        margin: 0 auto;
     }
 }
 
@@ -33,10 +34,18 @@
     color: #333;
 }
 
-.intro {
+.skillsTitle {
+    margin: 0 auto;
+}
+
+
+
+/**************** Animation ****************/
+.introCard {
     opacity: 0;
     /* Start hidden */
     animation: fadeIn 0.7s ease-in forwards;
+    position: relative;
 }
 
 @keyframes fadeIn {
