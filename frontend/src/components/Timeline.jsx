@@ -10,7 +10,7 @@ const Timeline = () => {
       <h1 className={styles.mainTitle}>My work experiences</h1>
       <Container>
         <Row>
-          <Col>
+          <Col className={styles.cardContainer}>
             <div className={styles.timeline}>
               {experiences.map((exp, index) => (
                 <TimelineEvent key={index} experience={exp} index={index} />
@@ -24,10 +24,8 @@ const Timeline = () => {
 };
 
 const TimelineEvent = ({ experience, index }) => {
-  // State to store screen width and determine if it's large
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
-  // Update isLargeScreen state when the window is resized
   useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 768);
@@ -55,14 +53,14 @@ const TimelineEvent = ({ experience, index }) => {
 
   return (
     <animated.div
-      style={isLargeScreen ? slideIn : jumpIn} // Use ternary operator based on screen size
+      style={isLargeScreen ? slideIn : jumpIn}
       className={styles.timelineEvent}
+      data-year={experience.years}
     >
-      <Card>
+      <Card className={styles.Card}>
         <Card.Body>
           <h5>{experience.role}</h5>
           <p>{experience.organisation}</p>
-          <small>{experience.years}</small>
           <p>{experience.description}</p>
         </Card.Body>
       </Card>

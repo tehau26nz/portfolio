@@ -1,32 +1,36 @@
-.mainTitle {
-    text-align: center;
-}
-
 .timeline {
-    position: relative;
-    padding: 1rem 0;
+    color: white;
+    margin: 2rem 0;
 }
 
 /* Default vertical layout for small screens */
 .timelineEvent {
-    margin-bottom: 2rem;
     border-left: 2px solid #ddd;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     position: relative;
-    /* For better responsiveness, give timeline events a flexible width on smaller screens */
-    width: 100%;
+    width: auto;
 }
 
 /* Timeline dot position */
 .timelineEvent::before {
-    content: "";
+    content: attr(data-year);
     position: absolute;
-    left: -7px;
-    top: 10px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #007bff;
+    left: -4rem;
+    width: 4rem;
+    /* Width for the rectangle */
+    height: 2.5rem;
+    /* Height for the rectangle */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    background-color: rebeccapurple;
+    /* No background fill */
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 0);
+    z-index: 1;
 }
 
 .timelineEvent h5 {
@@ -46,6 +50,10 @@
 
 /* Media Queries for larger screens (tablets, laptops, etc.) */
 @media (min-width: 768px) {
+    .timelineEvent::before {
+        left: -4rem;
+    }
+
     .timeline {
         display: flex;
         flex-wrap: wrap;
@@ -59,17 +67,17 @@
         margin-bottom: 1rem;
         /* Reduce space between timeline events */
         border-left: none;
-        padding-left: 1rem;
-        /* Adjust the position of the dot to align with the left side */
-        padding-left: 0;
-        margin-left: 10px;
+        padding: 0;
     }
 
     /* Position the timeline dots horizontally */
     .timelineEvent::before {
-        left: -10px;
-        top: 50%;
-        transform: translateY(-50%);
+        left: 10%;
+        /* Center the dot horizontally */
+        top: -20px;
+        /* Position above the card */
+        transform: translateX(-50%);
+        /* Offset to align with card content */
     }
 
     .timelineEvent h5 {
