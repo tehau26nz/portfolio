@@ -33,7 +33,26 @@ const About = () => {
               <p className="text-center p-3 m-1">
                 Currently a web developer at the Ministry of Education. I enjoy
                 being involved in front-end, back-end development, and build
-                intuitive web apps, websites and dev related projects.
+                intuitive web apps, websites and dev related projects. I'm
+                fluent in both{" "}
+                <img
+                  width="20px"
+                  src="/assets/logos/french-flag.png"
+                  alt="French-flag"
+                />{" "}
+                French and{" "}
+                <img
+                  width="20px"
+                  src="/assets/logos/british-flag.png"
+                  alt="United-Kingdom-flag"
+                />{" "}
+                English, and intermediate level in{" "}
+                <img
+                  width="20px"
+                  src="/assets/logos/spanish-flag.png"
+                  alt="Spanish-flag"
+                />{" "}
+                Spanish.
               </p>
             </Card>
           </Col>
