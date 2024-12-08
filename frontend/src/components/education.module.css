@@ -36,14 +36,17 @@
     }
 }
 
-h1,
-h2 {
+h1 {
     font-size: 1.3rem;
 
     @media (min-width:576px) {
         font-size: x-large;
 
     }
+}
+
+h2 {
+    font-size: 1.2rem;
 }
 
 .mainTitle {

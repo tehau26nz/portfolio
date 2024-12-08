@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../components/about.module.css";
 
 const About = () => {
-  const translations = ["Welcome", "Nau mai", "Salut", "Iaorana"];
+  const translations = ["Welcome", "Nau mai", "Bienvenue", "Iaorana"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -41,55 +41,62 @@ const About = () => {
         <div className="text-center mt-5">
           <h3>Skills</h3>
         </div>
-        <Row className="justify-content-center" xs sm md lg={12}>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/html-5.png" alt="HTML-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/css-3.png" alt="CSS-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/js.png" alt="JavaScript-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/typescript.png" alt="Typescript-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/react.png" alt="React-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/node-js.png" alt="NodeJS-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/php.png" alt="PHP-logo"></img>
-          </Col>
-        </Row>
+        <Card>
+          <Row className="justify-content-center" xs sm md lg={12}>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/html-5.png" alt="HTML-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/css-3.png" alt="CSS-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/js.png" alt="JavaScript-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img
+                src="/assets/logos/typescript.png"
+                alt="Typescript-logo"
+              ></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/react.png" alt="React-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/node-js.png" alt="NodeJS-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/php.png" alt="PHP-logo"></img>
+            </Col>
+          </Row>
+        </Card>
         <div className="text-center mt-5">
           <h3>Tools</h3>
         </div>
-        <Row className="justify-content-evenly" xs sm md lg={12}>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/terminal.png" alt="Terminal-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/docker.png" alt="Docker-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/github.png" alt="GitHub-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/jira.png" alt="Jira-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img src="/assets/logos/figma.png" alt="Figma-logo"></img>
-          </Col>
-          <Col xs md lg className="d-flex justify-content-center m-2">
-            <img
-              src="/assets/logos/vscode.png"
-              alt="Visual-Studio-Code-logo"
-            ></img>
-          </Col>
-        </Row>
+        <Card>
+          <Row className="justify-content-evenly" xs sm md lg={12}>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/terminal.png" alt="Terminal-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/docker.png" alt="Docker-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/git.png" alt="Git-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/jira.png" alt="Jira-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img src="/assets/logos/figma.png" alt="Figma-logo"></img>
+            </Col>
+            <Col xs md lg className="d-flex justify-content-center m-2">
+              <img
+                src="/assets/logos/vscode.png"
+                alt="Visual-Studio-Code-logo"
+              ></img>
+            </Col>
+          </Row>
+        </Card>
       </Container>
     </>
   );

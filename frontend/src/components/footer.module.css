@@ -1,0 +1,15 @@
+.footerCopyright {
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 3rem;
+}
+
+.contactLinks {
+    margin-top: 5rem;
+    justify-content: center;
+
+    img {
+        width: 2.5rem;
+        margin: 1rem;
+    }
+}

@@ -1,6 +1,11 @@
+.mainTitle {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .timeline {
     color: white;
-    margin: 2rem 0;
+    margin: 0.5rem 0;
 }
 
 /* Default vertical layout for small screens */
@@ -9,13 +14,15 @@
     padding-left: 1rem;
     position: relative;
     width: auto;
+    margin-top: 3rem;
 }
 
 /* Timeline dot position */
 .timelineEvent::before {
     content: attr(data-year);
     position: absolute;
-    left: -4rem;
+    top: -2rem;
+    left: -2.5rem;
     width: 4rem;
     /* Width for the rectangle */
     height: 2.5rem;
@@ -34,7 +41,7 @@
 }
 
 .timelineEvent h5 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -50,8 +57,8 @@
 
 /* Media Queries for larger screens (tablets, laptops, etc.) */
 @media (min-width: 768px) {
-    .timelineEvent::before {
-        left: -4rem;
+    .Card {
+        margin-bottom: 0.5rem;
     }
 
     .timeline {
@@ -67,16 +74,17 @@
         margin-bottom: 1rem;
         /* Reduce space between timeline events */
         border-left: none;
-        padding: 0;
+        margin-top: 0.5rem;
     }
 
     /* Position the timeline dots horizontally */
     .timelineEvent::before {
-        left: 10%;
+        position: relative;
+        left: 10px;
         /* Center the dot horizontally */
-        top: -20px;
+        top: 10px;
         /* Position above the card */
-        transform: translateX(-50%);
+        transform: translateX(-40%);
         /* Offset to align with card content */
     }
 
