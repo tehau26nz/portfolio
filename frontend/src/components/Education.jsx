@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <>
       <h1 className={styles.mainTitle}>Where I studied</h1>
-      <Row>
+      <Row className="m-1">
         {education.map((edu, index) => (
           <Card
             className={`rounded ${styles.cardFade}`}
@@ -17,8 +17,26 @@ const Education = () => {
             <Stack direction="horizontal" className={styles.Card}>
               <div className={styles.titles}>
                 <h1>{edu.qualification}</h1>
-                <Card.Text as="h2">{edu.institution}</Card.Text>
+                <Card.Link
+                  href={`${edu.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Text as="h2">{edu.institution}</Card.Text>
+                </Card.Link>
                 <Card.Text as="h3">{edu.years}</Card.Text>
+                {edu.others ? (
+                  <p className="mt-3">
+                    Major : {edu.others} {" - "} Minor: Marketing
+                  </p>
+                ) : (
+                  ""
+                )}
+                {edu.papers ? (
+                  <p className="mt-3">Papers : {edu.papers}</p>
+                ) : (
+                  ""
+                )}
               </div>
               <img
                 src={edu.logo}

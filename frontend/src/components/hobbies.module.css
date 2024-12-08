@@ -1,0 +1,82 @@
+.mainTitle {
+    text-align: center;
+}
+
+.hobbiesTitleContainer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.bodyContainer {
+    margin-top: 4rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    li {
+        text-align: center;
+        list-style: none;
+    }
+}
+
+.projectsContainer {
+    margin-top: 4rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/**************** Animation ****************/
+.hobbiesContainer {
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 0.7s ease-in forwards;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade {
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}

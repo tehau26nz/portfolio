@@ -16,7 +16,11 @@ const Experience = ({ experience }) => {
           <p>
             Organisation<br></br>
           </p>
-          <Card.Link href={`${experience.url}`} target="_blank">
+          <Card.Link
+            href={`${experience.url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {experience.organisation}
           </Card.Link>
         </Card>

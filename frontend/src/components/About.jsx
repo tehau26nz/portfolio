@@ -28,7 +28,7 @@ const About = () => {
             ></img>
           </Col>
           <Col lg="auto">
-            <h2 className="text-center">I'm Tehaunui</h2>
+            <h2 className="text-center mb-4">I'm Tehaunui</h2>
             <Card className={styles.introDescription}>
               <p className="text-center p-3 m-1">
                 Currently a web developer at the Ministry of Education. I enjoy
@@ -62,28 +62,28 @@ const About = () => {
         </div>
         <Card>
           <Row className="justify-content-center" xs sm md lg={12}>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/html-5.png" alt="HTML-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/css-3.png" alt="CSS-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/js.png" alt="JavaScript-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img
                 src="/assets/logos/typescript.png"
                 alt="Typescript-logo"
               ></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/react.png" alt="React-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/node-js.png" alt="NodeJS-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/php.png" alt="PHP-logo"></img>
             </Col>
           </Row>
@@ -93,22 +93,22 @@ const About = () => {
         </div>
         <Card>
           <Row className="justify-content-evenly" xs sm md lg={12}>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/terminal.png" alt="Terminal-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/docker.png" alt="Docker-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/git.png" alt="Git-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/jira.png" alt="Jira-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img src="/assets/logos/figma.png" alt="Figma-logo"></img>
             </Col>
-            <Col xs md lg className="d-flex justify-content-center m-2">
+            <Col xs md lg className="d-flex justify-content-center m-3">
               <img
                 src="/assets/logos/vscode.png"
                 alt="Visual-Studio-Code-logo"

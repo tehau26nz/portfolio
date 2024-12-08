@@ -51,7 +51,7 @@ const experiences = [
     {
         _id: 7,
         role: "Front of House",
-        organisation: "Various Cafés in Wellington",
+        organisation: "La Cloche Café (Kaiwharawhara)",
         years: "2016",
         url: "https://www.lacloche.co.nz/",
         description: "Provided excellent customer service. Prepared and served food and beverages. Worked as part of a team to maintain a clean and efficient hospitality environment."

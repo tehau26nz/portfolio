@@ -60,7 +60,13 @@ const TimelineEvent = ({ experience, index }) => {
       <Card className={styles.Card}>
         <Card.Body>
           <h5>{experience.role}</h5>
-          <p>{experience.organisation}</p>
+          <Card.Link
+            href={`${experience.url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>{experience.organisation}</p>
+          </Card.Link>
           <p>{experience.description}</p>
         </Card.Body>
       </Card>
