@@ -1,10 +1,60 @@
 .logo {
-    object-fit: cover;
+    width: 10rem;
+    align-content: center;
+
+    @media (min-width:425px) {
+        margin-left: auto;
+    }
+}
+
+.titles {
+    /* text-align: left; */
+
+    @media (max-width: 425px) {
+        /* text-align: center; */
+    }
+}
+
+.Card {
+    margin: 1rem;
+    display: flex;
+    /* Ensures flexbox is applied */
+    flex-direction: row;
+    /* Default horizontal layout */
+    justify-content: space-between;
+    /* Ensures space between titles and logos */
+
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+        /* Stacks titles and logos vertically */
+        justify-content: center;
+        /* Center align for mobile */
+        align-items: center;
+        /* Center both horizontally and vertically */
+
+    }
+}
+
+h1,
+h2 {
+    font-size: 1.3rem;
+
+    @media (min-width:576px) {
+        font-size: x-large;
+
+    }
+}
+
+.mainTitle {
+    text-align: center;
 }
 
 /************************ Animation ************************/
 
 .cardFade {
+    margin: 1rem 0;
+    display: flex;
     opacity: 0;
     transform: translateY(20px);
     /* Slightly move cards down */

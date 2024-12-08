@@ -1,7 +1,10 @@
-/* timeline.module.css */
+.mainTitle {
+    text-align: center;
+}
+
 .timeline {
     position: relative;
-    padding: 2rem;
+    padding: 1rem 0;
 }
 
 /* Default vertical layout for small screens */

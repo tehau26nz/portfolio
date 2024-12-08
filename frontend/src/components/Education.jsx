@@ -1,33 +1,35 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Row, Stack } from "react-bootstrap";
 import styles from "../components/education.module.css";
 import education from "../education";
 
 const Education = () => {
   return (
     <>
-      {education.map((edu, index) => (
-        <Card
-          className={`my-3 p-3 rounded ${styles.cardFade}`}
-          key={index}
-          style={{
-            animationDelay: `${index * 0.3}s`, //Delay each card by 0.3s
-          }}
-        >
-          <Card.Body d-flex justify-content-between align-items-center>
-            <div>
-              <Card.Title as="h1" className="text-center">
-                {edu.qualification}
-              </Card.Title>
-              <Card.Text as="h2">{edu.institution}</Card.Text>
-              <Card.Text as="h3" className="mb-3">
-                {edu.years}
-              </Card.Text>
-            </div>
-            <Card.Img src={edu.logo} className={styles.logo}></Card.Img>
-          </Card.Body>
-        </Card>
-      ))}
+      <h1 className={styles.mainTitle}>Where I studied</h1>
+      <Row>
+        {education.map((edu, index) => (
+          <Card
+            className={`rounded ${styles.cardFade}`}
+            key={index}
+            style={{ animationDelay: `${index * 0.3}s` }}
+          >
+            <Stack direction="horizontal" className={styles.Card}>
+              <div className={styles.titles}>
+                <h1>{edu.qualification}</h1>
+                <Card.Text as="h2">{edu.institution}</Card.Text>
+                <Card.Text as="h3">{edu.years}</Card.Text>
+              </div>
+              <img
+                src={edu.logo}
+                className={styles.logo}
+                rounded
+                alt={`${edu.institution}-logo`}
+              />
+            </Stack>
+          </Card>
+        ))}
+      </Row>
     </>
   );
 };

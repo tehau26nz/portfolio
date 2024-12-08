@@ -6,17 +6,20 @@ import experiences from "../experiences";
 
 const Timeline = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <div className={styles.timeline}>
-            {experiences.map((exp, index) => (
-              <TimelineEvent key={index} experience={exp} index={index} />
-            ))}
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <h1 className={styles.mainTitle}>My work experiences</h1>
+      <Container>
+        <Row>
+          <Col>
+            <div className={styles.timeline}>
+              {experiences.map((exp, index) => (
+                <TimelineEvent key={index} experience={exp} index={index} />
+              ))}
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
