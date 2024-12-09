@@ -1,7 +1,12 @@
-import { Container } from "react-bootstrap";
-import { Outlet } from 'react-router-dom';
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Container } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import EducationScreen from './screens/EducationScreen';
+import ExperienceScreen from './screens/ExperienceScreen';
+import HobbiesScreen from './screens/HobbiesScreen';
+import HomeScreen from './screens/HomeScreen';
+import NotFound from './screens/NotFound';
 
 const App = () => {
   return (
@@ -9,7 +14,13 @@ const App = () => {
       <Header />
       <main className="py-4">
         <Container>
-          <Outlet />
+          <Routes path="/" element={<App />}>
+            <Route index={true} path="/" element={<HomeScreen />} />
+            <Route path="/experience" element={<ExperienceScreen />} />
+            <Route path="/education" element={<EducationScreen />} />
+            <Route path="/hobbies" element={<HobbiesScreen />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes >
         </Container>
       </main>
       <Footer />
@@ -17,4 +28,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
