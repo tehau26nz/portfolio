@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaBookOpen, FaBriefcase, FaMugHot } from "react-icons/fa";
+import { Link } from "react-router";
 import styles from "../components/header.module.css";
 
 const Header = () => {
@@ -8,24 +9,24 @@ const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container className={styles.headerContainer}>
-          <Navbar.Brand href="/">
+          <Link to="/">
             <img src="/logo192.png" alt="logo" rounded></img>
-          </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/education" className={styles.navbutton}>
+              <Link to="/education" className={styles.navbutton}>
                 <FaBookOpen />
                 Education
-              </Nav.Link>
-              <Nav.Link href="/experience" className={styles.navbutton}>
+              </Link>
+              <Link to="/experience" className={styles.navbutton}>
                 <FaBriefcase />
                 Experience
-              </Nav.Link>
-              <Nav.Link href="/hobbies" className={styles.navbutton}>
+              </Link>
+              <Link to="/hobbies" className={styles.navbutton}>
                 <FaMugHot />
                 Hobbies
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

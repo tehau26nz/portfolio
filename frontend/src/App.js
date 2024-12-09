@@ -14,8 +14,8 @@ const App = () => {
       <Header />
       <main className="py-4">
         <Container>
-          <Routes path="/" element={<App />}>
-            <Route index={true} path="/" element={<HomeScreen />} />
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
             <Route path="/experience" element={<ExperienceScreen />} />
             <Route path="/education" element={<EducationScreen />} />
             <Route path="/hobbies" element={<HobbiesScreen />} />
