@@ -10,7 +10,7 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container className={styles.headerContainer}>
           <Link to="/">
-            <img src="/logo192.png" alt="logo" rounded></img>
+            <img src="/assets/logos/logo-32px.png" alt="logo" rounded></img>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
