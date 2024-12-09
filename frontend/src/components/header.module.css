@@ -5,3 +5,11 @@
         margin-right: 0.5rem;
     }
 }
+
+.headerContainer {
+
+    img {
+        width: 32px;
+        border-radius: 50%;
+    }
+}
