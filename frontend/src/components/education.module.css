@@ -1,3 +1,8 @@
+.mainTitle {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .logo {
     width: 10rem;
     align-content: center;
@@ -75,9 +80,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-.mainTitle {
-    text-align: center;
-}
 
 /************************ Animation ************************/
 
