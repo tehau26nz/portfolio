@@ -1,0 +1,75 @@
+.notFoundContainer {
+
+    .cardImage {
+        width: 225px;
+        margin: 1rem auto;
+        display: block;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 576px) {
+            width: 150px;
+        }
+    }
+
+    h1,
+    h2,
+    p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem
+    }
+
+    .notFoundBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /**************** Animation ****************/
+    .notFoundContainer {
+        opacity: 0;
+        animation: fadeIn 0.7s ease-in forwards;
+        position: relative;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    .fade {
+        animation: fadeInOut 3s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    }
+}

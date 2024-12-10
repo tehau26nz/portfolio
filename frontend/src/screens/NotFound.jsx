@@ -1,15 +1,27 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import styles from "../screens/notfound.module.css";
 
 const NotFound = () => {
   return (
     <>
-      <Card className="mt-5">
-        <div className="text-center m-5">
-          <h1 className="m-3">Sorry {":("}</h1>
-          <h2>This page couldn't be found</h2>
-        </div>
-      </Card>
+      <Container className={styles.notFoundContainer}>
+        <Card className="mt-5">
+          <h1>Oops {":("}</h1>
+          <Card.Img
+            src="/assets/thumbnails/cat-error.jpeg"
+            className={styles.cardImage}
+          />
+          <div className={styles.notFoundBody}>
+            <h2>Unfortunately ...</h2>
+            <p>This page couldn't be found</p>
+            <Link className="btn btn-dark m-4" to="/">
+              Return home
+            </Link>
+          </div>
+        </Card>
+      </Container>
     </>
   );
 };

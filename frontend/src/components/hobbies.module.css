@@ -40,7 +40,6 @@
 /**************** Animation ****************/
 .hobbiesContainer {
     opacity: 0;
-    /* Start hidden */
     animation: fadeIn 0.7s ease-in forwards;
     position: relative;
 }
