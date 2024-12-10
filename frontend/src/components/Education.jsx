@@ -27,13 +27,16 @@ const Education = () => {
                 <Card.Text as="h3">{edu.years}</Card.Text>
                 {edu.others ? (
                   <p className="mt-3">
-                    Major : {edu.others} {" - "} Minor: Marketing
+                    Major : {edu.others.major} {" - "} Minor :{" "}
+                    {edu.others.minor}
                   </p>
                 ) : (
                   ""
                 )}
                 {edu.papers ? (
-                  <p className="mt-3">Papers : {edu.papers}</p>
+                  <p className="mt-3 font-monospace font">
+                    Papers : {edu.papers}
+                  </p>
                 ) : (
                   ""
                 )}
